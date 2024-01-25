@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pWa-j1-ca5">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SigninVC-->
+        <scene sceneID="zhj-Dm-C0x">
+            <objects>
+                <viewController storyboardIdentifier="SigninVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OrY-Jw-IfP" customClass="SigninVC" customModule="Gallery_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sDZ-ex-ezl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEx-mL-chd">
+                                <rect key="frame" x="16" y="102.5" width="343" height="462"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit-lab-picture-photo-editing-2018-09-12" translatesAutoresizingMaskIntoConstraints="NO" id="UMb-GD-syD">
+                                        <rect key="frame" x="86" y="32" width="171.5" height="171.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="UMb-GD-syD" secondAttribute="height" multiplier="1:1" id="E18-hO-5nQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Gallery App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WLQ-yh-m0b">
+                                        <rect key="frame" x="8" y="235.5" width="327" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Immerse yourself in a visual feast with our gallery app, where stunning images come to life in vivid detail" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf7-TG-xfv">
+                                        <rect key="frame" x="8" y="282" width="327" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq1-7X-350">
+                                        <rect key="frame" x="8" y="407" width="327" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="7" maxY="0.0"/>
+                                        <state key="normal" title="Continue with Google" image="google.png"/>
+                                        <connections>
+                                            <action selector="onLogin:" destination="OrY-Jw-IfP" eventType="touchUpInside" id="eM8-Sy-3mv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="WLQ-yh-m0b" firstAttribute="leading" secondItem="eEx-mL-chd" secondAttribute="leading" constant="8" id="9PT-xZ-kuR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rq1-7X-350" secondAttribute="trailing" constant="8" id="A0B-Of-hlK"/>
+                                    <constraint firstItem="WLQ-yh-m0b" firstAttribute="top" secondItem="UMb-GD-syD" secondAttribute="bottom" constant="32" id="CNG-5v-jPc"/>
+                                    <constraint firstItem="UMb-GD-syD" firstAttribute="top" secondItem="eEx-mL-chd" secondAttribute="top" constant="32" id="Kpg-w0-Tog"/>
+                                    <constraint firstItem="Mf7-TG-xfv" firstAttribute="top" secondItem="WLQ-yh-m0b" secondAttribute="bottom" constant="8" id="M6t-Pu-Mxn"/>
+                                    <constraint firstItem="Rq1-7X-350" firstAttribute="top" secondItem="Mf7-TG-xfv" secondAttribute="bottom" constant="64" id="RVy-hu-Ybb"/>
+                                    <constraint firstAttribute="trailing" secondItem="WLQ-yh-m0b" secondAttribute="trailing" constant="8" id="UaW-lm-2bV"/>
+                                    <constraint firstItem="Rq1-7X-350" firstAttribute="leading" secondItem="eEx-mL-chd" secondAttribute="leading" constant="8" id="d7g-B1-r43"/>
+                                    <constraint firstItem="UMb-GD-syD" firstAttribute="centerX" secondItem="eEx-mL-chd" secondAttribute="centerX" id="dWW-vj-8sx"/>
+                                    <constraint firstItem="UMb-GD-syD" firstAttribute="width" secondItem="eEx-mL-chd" secondAttribute="width" multiplier="0.5" id="e14-5v-VDG"/>
+                                    <constraint firstItem="Mf7-TG-xfv" firstAttribute="leading" secondItem="eEx-mL-chd" secondAttribute="leading" constant="8" id="hA9-Lj-hkd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mf7-TG-xfv" secondAttribute="trailing" constant="8" id="tB2-o3-lkO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rq1-7X-350" secondAttribute="bottom" constant="32" id="ybn-Z4-nhn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GCm-MJ-Wox"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GCm-MJ-Wox" firstAttribute="trailing" secondItem="eEx-mL-chd" secondAttribute="trailing" constant="16" id="HbT-mg-Zx5"/>
+                            <constraint firstItem="eEx-mL-chd" firstAttribute="leading" secondItem="GCm-MJ-Wox" secondAttribute="leading" constant="16" id="Uk8-hT-lyb"/>
+                            <constraint firstItem="eEx-mL-chd" firstAttribute="centerY" secondItem="sDZ-ex-ezl" secondAttribute="centerY" id="Zym-W2-gab"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LM7-00-UDA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0N-jl-4ju" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698.4732824427481" y="0.0"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hWT-Lq-4xY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pWa-j1-ca5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cHd-BV-Hi6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OrY-Jw-IfP" kind="relationship" relationship="rootViewController" id="jxc-BQ-xrK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXa-nd-Lcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771.75572519083971" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="edit-lab-picture-photo-editing-2018-09-12" width="1024" height="1024"/>
+        <image name="google.png" width="18" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

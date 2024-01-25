@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCell" customModule="Gallery_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="184" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="184" height="177"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0S-Ha-xNU">
+                        <rect key="frame" x="4" y="8" width="176" height="161"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Load More"/>
+                        <connections>
+                            <action selector="onLoadMore:" destination="gTV-IL-0wX" eventType="touchUpInside" id="w3h-bt-wA0"/>
+                        </connections>
+                    </button>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Md5-pB-syJ">
+                        <rect key="frame" x="73.666666666666671" y="70" width="37" height="37"/>
+                    </activityIndicatorView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="I9V-WM-Ovb">
+                        <rect key="frame" x="4" y="0.0" width="176" height="169"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="I9V-WM-Ovb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="8op-kb-5r5"/>
+                <constraint firstItem="Md5-pB-syJ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ONM-Vl-AqE"/>
+                <constraint firstAttribute="bottom" secondItem="I9V-WM-Ovb" secondAttribute="bottom" constant="8" id="PKU-Wk-ThU"/>
+                <constraint firstAttribute="trailing" secondItem="m0S-Ha-xNU" secondAttribute="trailing" constant="4" id="UBm-9x-h7O"/>
+                <constraint firstItem="m0S-Ha-xNU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="aMq-p2-riK"/>
+                <constraint firstItem="m0S-Ha-xNU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="mKm-yB-TAu"/>
+                <constraint firstAttribute="bottom" secondItem="m0S-Ha-xNU" secondAttribute="bottom" constant="8" id="pRB-NU-vlM"/>
+                <constraint firstItem="I9V-WM-Ovb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pbY-7C-9uY"/>
+                <constraint firstItem="Md5-pB-syJ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="s9o-9w-959"/>
+                <constraint firstAttribute="trailing" secondItem="I9V-WM-Ovb" secondAttribute="trailing" constant="4" id="uQI-hF-Bzt"/>
+            </constraints>
+            <size key="customSize" width="184" height="177"/>
+            <connections>
+                <outlet property="imageView" destination="I9V-WM-Ovb" id="qjC-Tw-DtQ"/>
+                <outlet property="indecatorView" destination="Md5-pB-syJ" id="ovw-fS-dyN"/>
+                <outlet property="loadMoreButton" destination="m0S-Ha-xNU" id="pQA-Ds-Iac"/>
+            </connections>
+            <point key="canvasLocation" x="186.25954198473281" y="32.04225352112676"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg" width="1024" height="1024"/>
+    </resources>
+</document>

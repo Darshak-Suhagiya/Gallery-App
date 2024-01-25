@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BDBB1BC2B62EF0F007844ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB1BB2B62EF0F007844ED /* Constants.swift */; };
+		4BDBB1C02B62F4C2007844ED /* GalleryVC + CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB1BF2B62F4C2007844ED /* GalleryVC + CollectionViewDelegate.swift */; };
+		4BDBB1C22B62F6B9007844ED /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBB1C12B62F6B9007844ED /* HomeVM.swift */; };
+		4BF14F7F2B623EF70069F066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14F7E2B623EF70069F066 /* AppDelegate.swift */; };
+		4BF14F862B623EF70069F066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF14F842B623EF70069F066 /* Main.storyboard */; };
+		4BF14F892B623EF70069F066 /* Gallery_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14F872B623EF70069F066 /* Gallery_App.xcdatamodeld */; };
+		4BF14F8B2B623EF80069F066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF14F8A2B623EF80069F066 /* Assets.xcassets */; };
+		4BF14F8E2B623EF80069F066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF14F8C2B623EF80069F066 /* LaunchScreen.storyboard */; };
+		4BF14F9A2B6255150069F066 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4BF14F992B6255150069F066 /* SDWebImage */; };
+		4BF14F9D2B62555B0069F066 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 4BF14F9C2B62555B0069F066 /* GoogleSignIn */; };
+		4BF14FA12B625FF00069F066 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FA02B625FF00069F066 /* UIView.swift */; };
+		4BF14FA32B6262760069F066 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FA22B6262760069F066 /* SigninVC.swift */; };
+		4BF14FA62B626F830069F066 /* UserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FA52B626F830069F066 /* UserDefaultWrapper.swift */; };
+		4BF14FA82B626FBA0069F066 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FA72B626FBA0069F066 /* UserDefaults.swift */; };
+		4BF14FAF2B6275F00069F066 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FAE2B6275F00069F066 /* Images.swift */; };
+		4BF14FB22B6276770069F066 /* GalleryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FB12B6276770069F066 /* GalleryVM.swift */; };
+		4BF14FB42B62769F0069F066 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FB32B62769F0069F066 /* Config.swift */; };
+		4BF14FB72B6277E90069F066 /* GalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FB52B6277E90069F066 /* GalleryVC.swift */; };
+		4BF14FB82B6277E90069F066 /* GalleryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF14FB62B6277E90069F066 /* GalleryVC.xib */; };
+		4BF14FBB2B627BFB0069F066 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FBA2B627BFB0069F066 /* ServiceManager.swift */; };
+		4BF14FC22B6288F40069F066 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FC02B6288F40069F066 /* ImageCell.swift */; };
+		4BF14FC32B6288F40069F066 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF14FC12B6288F40069F066 /* ImageCell.xib */; };
+		4BF14FC52B629EB70069F066 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FC42B629EB70069F066 /* ImageFetcher.swift */; };
+		4BF14FC72B62B3370069F066 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FC62B62B3370069F066 /* CoreDataManager.swift */; };
+		4BF14FCB2B62B8350069F066 /* ProfilePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF14FC92B62B8350069F066 /* ProfilePageVC.swift */; };
+		4BF14FCC2B62B8350069F066 /* ProfilePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF14FCA2B62B8350069F066 /* ProfilePageVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4BDBB1BB2B62EF0F007844ED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4BDBB1BF2B62F4C2007844ED /* GalleryVC + CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryVC + CollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		4BDBB1C12B62F6B9007844ED /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		4BF14F7B2B623EF70069F066 /* Gallery App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gallery App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF14F7E2B623EF70069F066 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BF14F852B623EF70069F066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BF14F882B623EF70069F066 /* Gallery_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gallery_App.xcdatamodel; sourceTree = "<group>"; };
+		4BF14F8A2B623EF80069F066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BF14F8D2B623EF80069F066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BF14F8F2B623EF80069F066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BF14FA02B625FF00069F066 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		4BF14FA22B6262760069F066 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		4BF14FA52B626F830069F066 /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
+		4BF14FA72B626FBA0069F066 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		4BF14FAE2B6275F00069F066 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		4BF14FB12B6276770069F066 /* GalleryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVM.swift; sourceTree = "<group>"; };
+		4BF14FB32B62769F0069F066 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4BF14FB52B6277E90069F066 /* GalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVC.swift; sourceTree = "<group>"; };
+		4BF14FB62B6277E90069F066 /* GalleryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryVC.xib; sourceTree = "<group>"; };
+		4BF14FBA2B627BFB0069F066 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		4BF14FC02B6288F40069F066 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		4BF14FC12B6288F40069F066 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		4BF14FC42B629EB70069F066 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		4BF14FC62B62B3370069F066 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4BF14FC92B62B8350069F066 /* ProfilePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageVC.swift; sourceTree = "<group>"; };
+		4BF14FCA2B62B8350069F066 /* ProfilePageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePageVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BF14F782B623EF70069F066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF14F9A2B6255150069F066 /* SDWebImage in Frameworks */,
+				4BF14F9D2B62555B0069F066 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BDBB1BD2B62EF39007844ED /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14FA42B626F650069F066 /* Utils */,
+				4BF14F9F2B625F9A0069F066 /* Extentions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4BDBB1BE2B62F476007844ED /* SigninVC */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14FA22B6262760069F066 /* SigninVC.swift */,
+			);
+			path = SigninVC;
+			sourceTree = "<group>";
+		};
+		4BF14F722B623EF70069F066 = {
+			isa = PBXGroup;
+			children = (
+				4BF14F7D2B623EF70069F066 /* Gallery App */,
+				4BF14F7C2B623EF70069F066 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BF14F7C2B623EF70069F066 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14F7B2B623EF70069F066 /* Gallery App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BF14F7D2B623EF70069F066 /* Gallery App */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14FB02B6276260069F066 /* View Model */,
+				4BDBB1BD2B62EF39007844ED /* Helpers */,
+				4BF14FAD2B6275E40069F066 /* Models */,
+				4BF14F962B624B4B0069F066 /* Controllers */,
+				4BF14F952B624B220069F066 /* Supporting Files */,
+				4BF14F972B624F360069F066 /* Views */,
+			);
+			path = "Gallery App";
+			sourceTree = "<group>";
+		};
+		4BF14F952B624B220069F066 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14F7E2B623EF70069F066 /* AppDelegate.swift */,
+				4BF14F8A2B623EF80069F066 /* Assets.xcassets */,
+				4BF14F8F2B623EF80069F066 /* Info.plist */,
+				4BF14F872B623EF70069F066 /* Gallery_App.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BF14F962B624B4B0069F066 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBB1BE2B62F476007844ED /* SigninVC */,
+				4BF14FC82B62B7FC0069F066 /* ProfilePageVC */,
+				4BF14FAC2B6273DD0069F066 /* GalleryVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4BF14F972B624F360069F066 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14F842B623EF70069F066 /* Main.storyboard */,
+				4BF14F8C2B623EF80069F066 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4BF14F9F2B625F9A0069F066 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14FA02B625FF00069F066 /* UIView.swift */,
+				4BF14FA72B626FBA0069F066 /* UserDefaults.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		4BF14FA42B626F650069F066 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14FB32B62769F0069F066 /* Config.swift */,
+				4BDBB1BB2B62EF0F007844ED /* Constants.swift */,
+				4BF14FBA2B627BFB0069F066 /* ServiceManager.swift */,
+				4BF14FC42B629EB70069F066 /* ImageFetcher.swift */,
+				4BF14FC62B62B3370069F066 /* CoreDataManager.swift */,
+				4BF14FA52B626F830069F066 /* UserDefaultWrapper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4BF14FAC2B6273DD0069F066 /* GalleryVC */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14FB52B6277E90069F066 /* GalleryVC.swift */,
+				4BDBB1BF2B62F4C2007844ED /* GalleryVC + CollectionViewDelegate.swift */,
+				4BF14FB62B6277E90069F066 /* GalleryVC.xib */,
+				4BF14FB92B627B2B0069F066 /* CollectionCell */,
+			);
+			path = GalleryVC;
+			sourceTree = "<group>";
+		};
+		4BF14FAD2B6275E40069F066 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14FAE2B6275F00069F066 /* Images.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BF14FB02B6276260069F066 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14FB12B6276770069F066 /* GalleryVM.swift */,
+				4BDBB1C12B62F6B9007844ED /* HomeVM.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		4BF14FB92B627B2B0069F066 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14FC02B6288F40069F066 /* ImageCell.swift */,
+				4BF14FC12B6288F40069F066 /* ImageCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		4BF14FC82B62B7FC0069F066 /* ProfilePageVC */ = {
+			isa = PBXGroup;
+			children = (
+				4BF14FC92B62B8350069F066 /* ProfilePageVC.swift */,
+				4BF14FCA2B62B8350069F066 /* ProfilePageVC.xib */,
+			);
+			path = ProfilePageVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BF14F7A2B623EF70069F066 /* Gallery App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BF14F922B623EF80069F066 /* Build configuration list for PBXNativeTarget "Gallery App" */;
+			buildPhases = (
+				4BF14F772B623EF70069F066 /* Sources */,
+				4BF14F782B623EF70069F066 /* Frameworks */,
+				4BF14F792B623EF70069F066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gallery App";
+			packageProductDependencies = (
+				4BF14F992B6255150069F066 /* SDWebImage */,
+				4BF14F9C2B62555B0069F066 /* GoogleSignIn */,
+			);
+			productName = "Gallery App";
+			productReference = 4BF14F7B2B623EF70069F066 /* Gallery App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BF14F732B623EF70069F066 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4BF14F7A2B623EF70069F066 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4BF14F762B623EF70069F066 /* Build configuration list for PBXProject "Gallery App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BF14F722B623EF70069F066;
+			packageReferences = (
+				4BF14F982B6255150069F066 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				4BF14F9B2B62555B0069F066 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 4BF14F7C2B623EF70069F066 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BF14F7A2B623EF70069F066 /* Gallery App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BF14F792B623EF70069F066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF14F8E2B623EF80069F066 /* LaunchScreen.storyboard in Resources */,
+				4BF14F8B2B623EF80069F066 /* Assets.xcassets in Resources */,
+				4BF14F862B623EF70069F066 /* Main.storyboard in Resources */,
+				4BF14FCC2B62B8350069F066 /* ProfilePageVC.xib in Resources */,
+				4BF14FC32B6288F40069F066 /* ImageCell.xib in Resources */,
+				4BF14FB82B6277E90069F066 /* GalleryVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BF14F772B623EF70069F066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF14FBB2B627BFB0069F066 /* ServiceManager.swift in Sources */,
+				4BF14FAF2B6275F00069F066 /* Images.swift in Sources */,
+				4BF14FB72B6277E90069F066 /* GalleryVC.swift in Sources */,
+				4BDBB1C22B62F6B9007844ED /* HomeVM.swift in Sources */,
+				4BF14FCB2B62B8350069F066 /* ProfilePageVC.swift in Sources */,
+				4BF14FA62B626F830069F066 /* UserDefaultWrapper.swift in Sources */,
+				4BF14FB42B62769F0069F066 /* Config.swift in Sources */,
+				4BF14FC22B6288F40069F066 /* ImageCell.swift in Sources */,
+				4BDBB1BC2B62EF0F007844ED /* Constants.swift in Sources */,
+				4BF14FA32B6262760069F066 /* SigninVC.swift in Sources */,
+				4BF14FC52B629EB70069F066 /* ImageFetcher.swift in Sources */,
+				4BF14FA12B625FF00069F066 /* UIView.swift in Sources */,
+				4BDBB1C02B62F4C2007844ED /* GalleryVC + CollectionViewDelegate.swift in Sources */,
+				4BF14F892B623EF70069F066 /* Gallery_App.xcdatamodeld in Sources */,
+				4BF14FB22B6276770069F066 /* GalleryVM.swift in Sources */,
+				4BF14FA82B626FBA0069F066 /* UserDefaults.swift in Sources */,
+				4BF14FC72B62B3370069F066 /* CoreDataManager.swift in Sources */,
+				4BF14F7F2B623EF70069F066 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4BF14F842B623EF70069F066 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BF14F852B623EF70069F066 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BF14F8C2B623EF80069F066 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BF14F8D2B623EF80069F066 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BF14F902B623EF80069F066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BF14F912B623EF80069F066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BF14F932B623EF80069F066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gallery App/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Gallery-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BF14F942B623EF80069F066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gallery App/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Gallery-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BF14F762B623EF70069F066 /* Build configuration list for PBXProject "Gallery App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BF14F902B623EF80069F066 /* Debug */,
+				4BF14F912B623EF80069F066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BF14F922B623EF80069F066 /* Build configuration list for PBXNativeTarget "Gallery App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BF14F932B623EF80069F066 /* Debug */,
+				4BF14F942B623EF80069F066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BF14F982B6255150069F066 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4BF14F9B2B62555B0069F066 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BF14F992B6255150069F066 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BF14F982B6255150069F066 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		4BF14F9C2B62555B0069F066 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BF14F9B2B62555B0069F066 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4BF14F872B623EF70069F066 /* Gallery_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4BF14F882B623EF70069F066 /* Gallery_App.xcdatamodel */,
+			);
+			currentVersion = 4BF14F882B623EF70069F066 /* Gallery_App.xcdatamodel */;
+			path = Gallery_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4BF14F732B623EF70069F066 /* Project object */;
+}
