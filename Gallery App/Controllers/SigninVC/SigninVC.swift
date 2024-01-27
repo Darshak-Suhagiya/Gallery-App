@@ -7,7 +7,6 @@
 
 import UIKit
 import GoogleSignIn
-import PKHUD
 
 class SigninVC: UIViewController {
 
